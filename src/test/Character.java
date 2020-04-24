@@ -2,13 +2,45 @@ package test;
 
 public class Character {
 
-   public String name;
-   public Integer hp;
-   public Integer offense;
-   public Integer defense;
+   private String name;      //キャラクター名
+   private Integer hp;       //ヒットポイント
+   private Integer offense;  //攻撃力
+   private Integer defense;  //防御力
 
    public Character() {
 
+   }
+
+   public String getName() {
+       return name;
+   }
+
+   public void setName(String name) {
+       this.name = name;
+   }
+
+   public Integer getHp() {
+       return hp;
+   }
+
+   public void setHp(Integer hp) {
+       this.hp = hp;
+   }
+
+   public Integer getOffense() {
+       return offense;
+   }
+
+   public void setOffense(Integer offense) {
+       this.offense = offense;
+   }
+
+   public Integer getDefense() {
+       return defense;
+   }
+
+   public void setDefense(Integer defense) {
+       this.defense = defense;
    }
 
    public Character(String name, Integer hp, Integer offense, Integer defense) {
